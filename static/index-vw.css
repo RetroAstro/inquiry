@@ -1,0 +1,242 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+li, ul{
+    list-style:none;
+    text-decoration:none;
+}
+button{
+    outline:none;
+    border:none;
+}
+:root {
+    --initial-width: 100vw;
+}
+.left{
+    float:left;
+}
+.right{
+    float:right;
+}
+.container{
+    max-width: var(--initial-width);
+    margin:0 auto;
+    overflow: hidden;
+    font-family: PingFangSC-Regular;
+}
+header{
+    background-image: url('./img/header-bg.png');
+    background-size: cover;
+    width:100%;
+    height:36.13333vw;
+    overflow:hidden;
+}
+header .stu-info{
+    margin-left:5.86667vw;
+    margin-top:5.33333vw;
+}
+header .stu-info .stu-name{
+    font-size:6.66667vw;
+    color: #fff;
+    letter-spacing: 0.15333vw;
+}
+header .stu-info .stu-number{
+    margin-top:1.86667vw;
+    font-size:3.2vw;
+    color:#D9F3FF;
+    letter-spacing: .5px;
+}
+header .stu-info .stu-term{
+    margin-top:3.73333vw;
+    font-size:3.2vw;
+    color:#DCF6FF;
+    letter-spacing: .5px;
+}
+header .search-info{
+    margin-top:7.46667vw;
+    margin-right:10vw;
+    position: relative;
+}
+header .search-info .text{
+    font-size:4.4vw;
+    color:#A4DFFF;
+    letter-spacing: 0.292vw;
+    line-height:5.2vw;
+    width:5.2vw;
+    word-wrap: break-word;
+    word-break: break-all;
+    display:inline-block;
+    text-shadow:0px 1px 0.66667vw #5796D3;
+    margin-left:7.6vw;
+}
+header .search-info .text.active::after{
+    content:"";
+    display: block;
+    background: #fff;
+    border-radius: 1.33333vw;
+    width: 5.33333vw;
+    height: 0.53333vw;
+    margin-top:2.4vw;
+    margin-left:-0.3vw;
+}
+header .search-info i{
+    position:absolute;
+    right:0.26667vw;
+    margin-top:2.66667vw;
+    transition: right .3s;
+}
+.white-gap{
+    background:#fff;
+    width:100%;
+    height:4vw;
+}
+main{
+    width:300%;
+    display: flex;
+    transition: margin-left .6s ease-out;
+    margin-left:-200%;
+}
+main > div{
+    width:100%;
+}
+main ul li{
+    display:flex;
+    height:16.26667vw;
+    line-height:16.26667vw;
+}
+main ul li:nth-child(2n) {
+    background:#fff;
+}
+main ul li:nth-child(2n+1) {
+    background: #F4FAFF;
+}
+main ul li .two{
+    width:66.66%;
+}
+main ul li .one{
+    width:33.33%;
+}
+main ul li .lesson{
+    margin-left:5.73333vw;
+    font-size:4.26667vw;
+    color:#2F2F2F;
+    letter-spacing:.3px;
+}
+main .grade .grade-info span{
+    padding-left:5.06667vw;
+    border-left:0.26667vw solid #D9E4ED;
+    font-size:4.8vw;
+    color:#52A6EB;
+    letter-spacing:.3px;
+}
+main ul li .grade-info button{
+    display: inline-block;
+    text-align:center;
+    vertical-align:text-bottom;
+    margin-left:4vw;
+    min-width: 11.2vw;
+    padding: 0 1vw;
+    height:4.93333vw;
+    font-size:2.93333vw;
+    color:#fff;
+    background:#72C2FC;
+    box-shadow:1px 0.4vw 0.8vw 0px #CFE1EF;
+    border-radius:13.33333vw;
+}
+main .restart{
+    position: relative;
+    text-align:center;
+}
+main .restart .exam-bg{
+    display: inline-block;
+    margin-top:26.66667vw;
+    background-size:contain;
+    width:57.86667vw;
+    height:48vw;
+}
+main .restart .exam-bg.error{
+    background-image: url('./img/error.png');
+}
+main .restart .exam-bg.fine{
+    background-image: url('./img/right.png');
+}
+main .restart p{
+    font-size: 4.26667vw;
+    color:#BAD6E6;
+    letter-spacing: .5px;
+}
+main .exam li {
+    height:21.6vw;
+    line-height:normal;
+}
+main .exam .les_name{
+    font-size:4.26667vw;
+    color:#232323;
+    margin-top:5.6vw;
+    margin-bottom:3.06667vw;
+}
+main .exam .les_time{
+    display: flex;
+    align-content: space-between;
+    margin-left:-1.33333vw;
+}
+main .exam .les_time .les_time_clock{
+    display: inline-block;
+    width: 4.26667vw;
+    height:4.26667vw;
+    background: url('./img/clock.png') no-repeat;
+    background-size:cover;
+}
+main .exam .les_time .les_time_date{
+    font-size:2.66667vw;
+    color:#666;
+    margin-left: 2vw;
+}
+main .exam .les_time .les_time_when{
+    font-size:2.66667vw;
+    color:#666;
+    margin-left:11.46667vw;
+}
+main .exam .grade-info{
+    padding: 5.6vw 0 0 0;
+}
+main .exam .grade-info .grade-row{
+    height: 5.33333vw;
+    padding-left: 8.66667vw;
+    border-left: 0.26667vw solid #D9E4ED;
+}
+main .exam .grade-info .grade-row .flex{
+    display: flex;
+}
+main .exam .grade-info .grade-row:nth-child(2) {
+    padding-top: 1.33333vw;
+}
+main .exam .grade-info .grade-row .location{
+    width:3.2vw;
+    height:4.13333vw;
+    background: url('./img/icon_location.png') no-repeat;
+    background-size:contain;
+    margin-top:.3vw;
+}
+main .exam .grade-info .grade-row span{
+    font-size: 3.46667vw;
+    color:#666;
+    letter-spacing: .5px;
+    margin-left:3.06667vw;
+}
+main .exam .grade-info .grade-row .seat{
+    display: inline-block;
+    margin-top:0.8vw;
+    width: 3.2vw;
+    height: 3.06667vw;
+    background: url('./img/icon_seat.png') no-repeat;
+    background-size:contain;
+}
+main .grade .grade-info.red span{
+    color: #FF9FAF;
+}
+main .grade .grade-info.red button{
+    background: #FF9FAF;
+}
