@@ -3,7 +3,7 @@ $(document).ready(() => {
     var texts = $('header .text');
     texts.each((i, ele) => {
         var el = $(ele);
-        el.click(() => {
+        el.bind('touchstart', () => {
             texts.css('color', '#A4DFFF');
             el.css('color', '#fff');
             texts.removeClass('active');
