@@ -9,6 +9,7 @@ $(document).ready(() => {
             texts.removeClass('active');
             el.addClass('active');
             $('main').css('margin-left', `-${i}00%`);
+            fixHeight(i);
         })
     })
 })
@@ -92,7 +93,10 @@ function loadArrange(values) {
     }
 }
 
-var trapHeight = $(window).height() - ( $('header').height() + $('nav').height() );
-
-$('main').css('height', `${trapHeight}`);
+function fixHeight(i) { 
+    var uls = $('main ul');
+    var trapHeight = $('header').height() + $('nav').height();
+    var contentHeight = $(uls[i]).height() + trapHeight;
+    $('.container').css('height', `${contentHeight}`);
+}
 
