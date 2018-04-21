@@ -100,7 +100,6 @@ main{
 }
 main > div{
     width:100%;
-    overflow-y: auto;
 }
 main ul li{
     display:flex;
