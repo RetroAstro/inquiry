@@ -94,5 +94,5 @@ function loadArrange(values) {
 
 var trapHeight = $(window).height() - ( $('header').height() + $('nav').height() );
 
-$('main > div').css('height', `${trapHeight}`);
+$('main').css('height', `${trapHeight}`);
 
