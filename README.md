@@ -1,4 +1,6 @@
-#### how to use: 
-> ##### npm install
+#### Usage :
+````
+$ npm install
 
-> ##### node app.js
+$ node app.js
+````
